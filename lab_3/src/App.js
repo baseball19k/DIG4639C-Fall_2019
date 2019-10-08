@@ -1,12 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Entity from "./components/Entity/index.js";
-import Example from "./components/Example/index.js";
 
-class App extends React.Component {
-  render(){
-    return (
+function App() {
+  return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -21,12 +18,9 @@ class App extends React.Component {
         >
           Learn React
         </a>
-        <Example />
       </header>
-      <Entity content="This is content!"/>
     </div>
   );
-}
 }
 
 export default App;
