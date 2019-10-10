@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Entity from "./components/Entity/index.js";
 import Example from "./components/Example/index.js";
+import Example2 from "./components/Example2/index.js";
 
 class App extends React.Component {
   render(){
