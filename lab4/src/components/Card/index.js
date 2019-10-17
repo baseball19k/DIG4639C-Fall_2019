@@ -3,7 +3,7 @@ import "./index.css";
 
 class Card extends React.Component {
 
-  render(){
+  render() {
     return(<div className="card">
       <span className="close"
       onClick={this.props.dataclick}

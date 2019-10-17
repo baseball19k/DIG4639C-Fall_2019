@@ -20,7 +20,7 @@ class CardList extends React.Component {
     return(
       <div>
         {
-          this.state.cards.map((card,index) => {
+          this.state.cards.map((card, index) => {
             return <Card
               key={index}
               title={card.title}
@@ -28,6 +28,8 @@ class CardList extends React.Component {
               dataclick={this.remove} />
           })
         }
+        </div>
     );
   }
 }
+export default CardList;
