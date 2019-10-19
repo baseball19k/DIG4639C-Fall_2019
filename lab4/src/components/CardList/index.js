@@ -6,8 +6,8 @@ class CardList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {cards: data.cards};
-
   }
+
   remove = (event) => {
     let datatitle = event.target.getAttribute("datatile");
     let localCards = this.state.cards;
