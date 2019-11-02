@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import Cardlist from "./components/cardlist/index.js";
-import Weather from "./components/weather/index.js";
+import Weather from "./Components/Weather/";
 
 class App extends React.Component {
   render() {
