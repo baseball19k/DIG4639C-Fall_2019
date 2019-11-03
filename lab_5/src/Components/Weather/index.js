@@ -35,9 +35,6 @@ class Weather extends React.Component {
   render() {
     return(
       <div className="card">
-        <span className="close"
-        onClick={this.props.dataclick}
-        datatitle={this.props.title}>&times;</span>
         <h1>
         {this.state.name}
         </h1>
