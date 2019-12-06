@@ -1,0 +1,7 @@
+.profile {
+  box-shadow: 0 4px 8px 0 rgba(244, 100, 21, 0.29);
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 1em;
+}

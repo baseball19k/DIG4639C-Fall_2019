@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+}
+
+.button {
+	background-color:#c79b1a;
+	border-radius:28px;
+	border:1px solid #9e7c15;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:16px;
+	text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(244, 100, 21, 0.29);
+  margin-top: 10px;
+}
