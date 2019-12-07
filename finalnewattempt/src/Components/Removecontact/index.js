@@ -1,0 +1,2 @@
+
+removecontact={this.removecontact}

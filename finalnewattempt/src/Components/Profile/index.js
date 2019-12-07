@@ -23,10 +23,6 @@ class Profile extends React.Component{
             )
         })
         .catch(() => console.log("Errors!"))
-
-
-
-
     }
     render() {
         return(
