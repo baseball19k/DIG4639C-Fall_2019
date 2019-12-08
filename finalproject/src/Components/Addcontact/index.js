@@ -5,9 +5,13 @@ class Addcontact extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {added: {}};
+    this.state = {
+      added: []
 
+    };
   }
+
+
   getValue = (event) => {
 
     event.preventDefault();
@@ -18,6 +22,7 @@ class Addcontact extends React.Component {
     this.setState({"name": name, "number": number});
 
   }
+
   componentDidMount() {
 
     fetch("https://apiexample.website/contacts/add", {
@@ -28,8 +33,8 @@ class Addcontact extends React.Component {
         "Accept": "application/json"
       },
       "body": JSON.stringify({
-        "name": "",
-        "number": ""
+        "name": this.state.added.name,
+        "number": this.state.added.number
       })
     })
     .then(response => response.json() )
@@ -39,18 +44,17 @@ class Addcontact extends React.Component {
     });
 
   }
+
 render(){
   return(
     <div>
+        <button className="button" onClick={(event) => {this.props.changemenu(event, 0)} }>Back</button>
         <form onSubmit={this.getValue}>
           <input type="text" id="name" />
           <input type="text" id="number" />
           <button>SUBMIT</button>
         </form>
         <hr />
-        <p>{this.state.name}</p>
-        <p>{this.state.number}</p>
-        <button className="button" onClick={(event) => {this.props.changemenu(event, 0)} }>Return</button>
       </div>
   );
 }

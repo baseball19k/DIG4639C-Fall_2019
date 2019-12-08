@@ -7,8 +7,8 @@ class Contact extends React.Component {
     return(
       <div className="contact">
         <span className="close"
-        onClick={this.props.removecontact}
-        datatitle={this.props.name}>&times;</span>
+        onClick={this.props.dataclick}
+        dataname={this.props.name}>&times;</span>
         <h3>{this.props.name}</h3>
         <p>{this.props.number}</p>
       </div>
