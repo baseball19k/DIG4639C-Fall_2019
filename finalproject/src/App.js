@@ -31,21 +31,21 @@ class App extends React.Component {
       menu = <div>
         <h1>Welcome to your Phonebook!</h1>
         <br />
-        <button className="button" onClick={(event) => {this.changeMenu(event, 1)} }>Add Contacts</button><br />
-        <button className="button" onClick={(event) => {this.changeMenu(event, 2)} }>Show Contacts</button><br />
-        <button className="button" onClick={(event) => {this.changeMenu(event, 3)} }>Profile</button><br />
+        <button className="button" onClick={(event) => {this.changeMenu(event, 1)} }>Show Contacts</button><br />
+        <button className="button" onClick={(event) => {this.changeMenu(event, 2)} }>Profile</button><br />
+        <button className="button" onClick={(event) => {this.changeMenu(event, 3)} }>Add Contacts</button><br />
       </div>;
 
     }
-    if(this.state.menu === 1) {
+    if(this.state.menu === 3) {
 
       menu = <Addcontact changemenu={this.changeMenu} />;
 
-    }if(this.state.menu === 2) {
+    }if(this.state.menu === 1) {
 
       menu = <Contactlist changemenu={this.changeMenu} />;
 
-    }if(this.state.menu === 3) {
+    }if(this.state.menu === 2) {
 
       menu = <Profile changemenu={this.changeMenu} />;
 
